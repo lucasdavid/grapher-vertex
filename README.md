@@ -1,2 +1,2 @@
 # vertex
-A tiny demonstration of how to build with grapher.
+A short demonstration of how to build with grapher.
