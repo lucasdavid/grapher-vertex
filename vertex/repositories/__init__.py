@@ -6,6 +6,10 @@ class CachedRepository(EntityRepository):
     data = {}
 
     def where(self, skip=0, limit=None, **query):
+        query_item = query.popitem()
+        if query_item[0] == self.identity:
+            return self.find((query_item[1]))
+
         return []
 
     def create(self, entities):
